@@ -46,11 +46,11 @@ const config = {
     return [
       {
         source: "/blog",
-        destination: "https://hashnode-starter-kit-git-main-ismailmushrafs-projects.vercel.app/blog",
+        destination: "https://hashnode-starter-kit-chi.vercel.app/blog",
       },
       {
         source: "/blog/:path*",
-        destination: "https://hashnode-starter-kit-git-main-ismailmushrafs-projects.vercel.app/blog/:path*",
+        destination: "https://hashnode-starter-kit-chi.vercel.app/blog/:path*",
       },
       {
 				source: '/ping/data-event',
