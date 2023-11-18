@@ -26,33 +26,9 @@ const config = {
 			},
 		],
 	},
-	// async rewrites() {
-	// 	return [
-	// 		{
-	// 			source: '/ping/data-event',
-	// 			destination: `${ANALYTICS_BASE_URL}/api/data-event`,
-	// 		},
-	// 		{
-	// 			source: '/ping/view',
-	// 			destination: `${ANALYTICS_BASE_URL}/api/view`,
-	// 		},
-	// 		{
-	// 			source: '/api/collect',
-	// 			destination: `${ADVANCED_ANALYTICS_BASE_URL}/api/collect`,
-	// 		},
-	// 	];
-	// },
-  async rewrites() {
-    return [
-      {
-        source: "/blog",
-        destination: "https://hashnode-starter-kit-chi.vercel.app/blog",
-      },
-      {
-        source: "/blog/:path*",
-        destination: "https://hashnode-starter-kit-chi.vercel.app/blog/:path*",
-      },
-      {
+	async rewrites() {
+		return [
+			{
 				source: '/ping/data-event',
 				destination: `${ANALYTICS_BASE_URL}/api/data-event`,
 			},
@@ -64,8 +40,32 @@ const config = {
 				source: '/api/collect',
 				destination: `${ADVANCED_ANALYTICS_BASE_URL}/api/collect`,
 			},
-    ];
-  },
+		];
+	},
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/blog",
+  //       destination: "https://hashnode-starter-kit-chi.vercel.app/blog",
+  //     },
+  //     {
+  //       source: "/blog/:path*",
+  //       destination: "https://hashnode-starter-kit-chi.vercel.app/blog/:path*",
+  //     },
+  //     {
+		// 		source: '/ping/data-event',
+		// 		destination: `${ANALYTICS_BASE_URL}/api/data-event`,
+		// 	},
+		// 	{
+		// 		source: '/ping/view',
+		// 		destination: `${ANALYTICS_BASE_URL}/api/view`,
+		// 	},
+		// 	{
+		// 		source: '/api/collect',
+		// 		destination: `${ADVANCED_ANALYTICS_BASE_URL}/api/collect`,
+		// 	},
+  //   ];
+  // },
 };
 
 module.exports = config;
