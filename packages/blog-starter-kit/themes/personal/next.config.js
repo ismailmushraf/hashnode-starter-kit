@@ -46,11 +46,11 @@ const config = {
     return [
       {
         source: "/blog",
-        destination: "hashnode-starter-egmsfpjom-ismailmushrafs-projects.vercel.app/blog", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+        destination: "hashnode-starter-egmsfpjom-ismailmushrafs-projects.vercel.app/blog",
       },
       {
         source: "/blog/:path*",
-        destination: "hashnode-starter-egmsfpjom-ismailmushrafs-projects.vercel.app/blog/:path*", -> Replace https://starter-kit-rose-seven.vercel.app with your own Vercel deployment URL from step 1
+        destination: "hashnode-starter-egmsfpjom-ismailmushrafs-projects.vercel.app/blog/:path*",
       },
       {
 				source: '/ping/data-event',
